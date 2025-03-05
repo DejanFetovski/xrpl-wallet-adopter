@@ -1,0 +1,39 @@
+{
+  "name": "@xrpl-wallet/core",
+  "version": "0.4.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.1.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.2"
+  },
+  "tsup": {
+    "entry": [
+      "index.ts"
+    ],
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "dts": true
+  },
+  "dependencies": {
+    "xrpl-accountlib": "^3.0.0",
+    "xrpl-client": "2.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
